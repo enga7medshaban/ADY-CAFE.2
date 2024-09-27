@@ -1,0 +1,489 @@
+body {
+    margin: 0; /* إزالة الهوامش الافتراضية للصفحة */
+    font-family: Arial, sans-serif; /* تعيين نوع الخط الأساسي للنصوص في الصفحة */
+}
+
+header {
+    display: flex; /* استخدام flexbox لترتيب العناصر بشكل أفقي */
+    justify-content: space-between; /* توزيع العناصر بين الجانبين */
+    align-items: center; /* محاذاة العناصر عمودياً في المركز */
+    padding: 20px 50px; /* إضافة مسافة داخلية حول محتوى الـ header */
+}
+
+.logo img {
+    width: 82px; /* تعيين عرض الشعار */
+    height: 80px;
+
+
+}
+
+nav ul {
+    list-style: none; /* إزالة النقاط من قائمة الروابط */
+    display: flex; /* استخدام flexbox لترتيب العناصر بشكل أفقي */
+    gap: 20px; /* إضافة مسافة بين الروابط */
+}
+
+nav a {
+    text-decoration: none; /* إزالة التسطير من الروابط */
+    color: black; /* تعيين لون النص للروابط */
+    font-weight: bold; /* تعيين الخط العريض للنصوص */
+}
+
+.main-content {
+    display: flex; /* استخدام flexbox لترتيب العناصر بشكل أفقي */
+    justify-content: flex-end; /* وضع العناصر على الجانب الأيمن */
+    align-items: center; /* محاذاة العناصر عمودياً في المركز */
+    padding: 50px; /* إضافة مسافة داخلية حول محتوى الـ section */
+    position: relative; /* تعيين موضع العنصر كـ relative لتسهيل تحديد الموقع بالنسبة له */
+}
+
+.text {
+    max-width: 400px; /* تعيين الحد الأقصى لعرض النص */
+    margin-right: 50px; /* إضافة مسافة بين النص والصورة الكبيرة */
+}
+
+.text h1 {
+    font-size: 48px; /* تعيين حجم الخط للعناوين */
+    line-height: 1.2; /* ضبط ارتفاع السطر لتحسين قراءة العنوان */
+}
+
+.text span {
+    color: green; /* تعيين لون النص الذي يحتوي على span */
+    font-weight: bold; /* تعيين الخط العريض للنص داخل span */
+}
+
+.text p {
+    color: #555; /* تعيين لون النص للفقرات */
+    margin: 20px 0; /* إضافة مسافة فوق وتحت الفقرة */
+}
+
+.btn {
+    display: inline-block; /* تعيين البوتون ككتلة مدمجة مع النص */
+    background-color: green; /* تعيين لون خلفية البوتون */
+    color: white; /* تعيين لون النص داخل البوتون */
+    padding: 10px 20px; /* إضافة مسافة داخلية حول النص في البوتون */
+    text-decoration: none; /* إزالة التسطير من النص داخل البوتون */
+    border-radius: 5px; /* تعيين زوايا مدورة للبوتون */
+    margin-top: 20px; /* إضافة مسافة فوق البوتون */
+}
+
+.images {
+    position: relative; /* تعيين موضع العنصر كـ relative لتحديد موقع العناصر الأخرى بالنسبة له */
+    display: flex; /* استخدام flexbox لترتيب العناصر بشكل عمودي */
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+    align-items: flex-end; /* محاذاة العناصر على الجانب الأيمن */
+    margin-left: auto; /* إضافة مسافة تلقائية لليمين لإبقاء العناصر على اليمين */
+}
+
+.big-cup {
+    width:270px; /* تعيين عرض الصورة الكبيرة */
+    position: absolute;
+    top: 80%;
+    right: 50px;
+    transform: translate(0,-80%);
+}
+
+.semi-circle {
+    width:465px; /* تعيين عرض النصف الدائري */
+    height:410px; /* تعيين ارتفاع النصف الدائري */
+    background-color: rgb(1, 128, 1); /* تعيين لون خلفية النصف الدائري */
+    border-radius: 1000px 0 0 0; /* تعيين زوايا دائرية في الأسفل لإنشاء شكل نصف دائري */
+    position: absolute; /* تعيين موضع العنصر كـ absolute لتحديد موقعه بالنسبة للعنصر الأب */
+    top: 0; /* وضع النصف الدائري فوق الصورة الكبيرة */
+    right: 0; /* وضع النصف الدائري على الجانب الأيمن */
+    z-index: -1; /* تعيين ترتيب الظهور لجعل النصف الدائري خلف العناصر الأخرى */
+}
+
+.small-cups {
+    display: flex; /* استخدام flexbox لترتيب الصور الصغيرة بشكل أفقي */
+    justify-content: center; /* محاذاة الصور الصغيرة في المركز */
+  
+    gap: 10px; /* إضافة مسافة بين الصور الصغيرة */
+    right:200%;
+    margin-top: 350px; /* إضافة مسافة فوق الصور الصغيرة */
+    position: relative; /* تعيين موضع العنصر كـ relative لتحديد موقعه بشكل نسبي */
+}
+
+.small-cups img {
+    width: 70px; /* تعيين عرض الصور الصغيرة */
+}
+
+.social-icons {
+    position: absolute; /* تعيين موضع العنصر كـ absolute لتحديد موقعه بالنسبة للعنصر الأب */
+    right: 50px; /* وضع الرموز الاجتماعية على الجانب الأيمن */
+    bottom: 50px; /* وضع الرموز الاجتماعية في الأسفل */
+    display: flex; /* استخدام flexbox لترتيب الرموز الاجتماعية بشكل عمودي */
+    flex-direction: column; /* ترتيب الرموز الاجتماعية بشكل عمودي */
+    gap: 10px; /* إضافة مسافة بين الرموز الاجتماعية */
+}
+
+.social-icons img {
+    width: 30px; /* تعيين عرض الرموز الاجتماعية */
+}
+     /* تنسيق الحاوية الرئيسية */
+     .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px; /* مسافة بين البطاقات */
+        justify-content: center;
+    }
+
+    /* تنسيق البطاقة */
+    .card {
+        position: relative;
+        width: 300px; /* تعيين عرض البطاقة */
+        height: 300px; /* تعيين ارتفاع البطاقة */
+        overflow: hidden;
+        border-radius: 10px; /* إضافة زوايا مدورة للبطاقة */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل للبطاقة */
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    /* تنسيق الصورة */
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+    #menu {
+        padding: 50px;
+        background-color: #f4f4f4; /* لون خلفية يمكن تغييره حسب التصميم */
+    }
+    
+    #menu h2 {
+        font-size: 36px;
+        color: green; /* لون متناسق مع التصميم */
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .content {
+position: absolute;
+bottom: -100%; /* أخفاء المحتوى تحت البطاقة */
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6); /* خلفية داكنة مع شفافية */
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+transition: bottom 0.3s;
+padding: 20px;
+box-sizing: border-box;
+}
+
+    /* تنسيق الرابط "Read More" */
+    .read-more {
+        color: #ff0057; /* لون النص */
+        text-decoration: none; /* إزالة التسطير */
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* تأثير التمرير فوق البطاقة */
+    .card:hover .content {
+        bottom: 0; /* عرض المحتوى عند التمرير */
+    }
+
+    .card:hover .image img {
+        transform: scale(1.1); /* تكبير الصورة عند التمرير */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* تكبير البطاقة عند التمرير */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة ظل البطاقة عند التمرير */
+    }
+#whats-new {
+    padding: 50px;
+    background-color: #f9f9f9; /* لون خلفية يمكن تغييره حسب التصميم */
+}
+
+#whats-new h2 {
+    font-size: 36px;
+    color: green; /* لون متناسق مع التصميم */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap; /* يسمح بتغيير تنسيق العناصر عند تغيير حجم الشاشة */
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: white; /* لون خلفية يمكن تغييره حسب التصميم */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+}
+
+.news-item img {
+    width:300px;
+    border-radius: 20PX;
+margin-top: 10px;
+    height: 300px;
+}
+
+.news-info {
+    padding: 20px;
+}
+
+.news-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.news-info p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.news-info .btn {
+    background-color: green; /* لون خلفية البوتون متناسق مع التصميم */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+#contact {
+    padding: 50px;
+    background-color: #f4f4f4; /* لون خلفية يمكن تغييره حسب التصميم */
+   
+        padding-left: 200cm; /* إضافة مساحة داخلية من الجهة اليسرى */
+    }
+
+
+#contact h2 {
+    font-size: 36px;
+    color: green; /* لون متناسق مع التصميم */
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* يسمح بتغيير تنسيق العناصر عند تغيير حجم الشاشة */
+    
+}
+
+.contact-details {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-details p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    padding-left: 1cm; /* إضافة مساحة داخلية من الجهة اليسرى */
+}
+
+.contact-details a {
+    color: green; /* لون الروابط متناسق مع التصميم */
+    text-decoration: none;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: green; /* لون خلفية البوتون متناسق مع التصميم */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: darkgreen; /* لون الخلفية عند التمرير */
+}
+.social-links {
+    margin-top: 20px; /* مسافة فوق روابط وسائل التواصل الاجتماعي */
+    text-align: center; /* محاذاة الوسط للروابط */
+}
+
+.social-icon {
+    display: inline-block; /* جعل الأيقونات تظهر بجانب بعضها */
+    margin: 0 10px; /* مسافة بين الأيقونات */
+    margin-top: 250px;
+}
+
+.social-icon img {
+    width: 30px; /* عرض الأيقونات */
+    height: 30px; /* ارتفاع الأيقونات */
+    vertical-align: middle; /* محاذاة عمودية */
+    transition: opacity 0.3s; /* تأثير الانتقال عند التمرير */
+}
+
+.social-icon img:hover {
+    opacity: 0.7; /* تقليل الشفافية عند التمرير فوق الأيقونات */
+}
+/* تنسيق زر "Read More" */
+.read-more {
+    position: relative; /* تعيين موضع العنصر لتطبيق التأثيرات بشكل صحيح */
+    display: inline-block; /* جعل الزر يظهر بجانب النصوص الأخرى */
+    padding: 10px 20px; /* إضافة مسافة داخلية حول النص في الزر */
+    background-color: green; /* لون خلفية الزر */
+    color: white; /* لون النص داخل الزر */
+    text-decoration: none; /* إزالة التسطير من النص داخل الزر */
+    border-radius: 5px; /* تعيين زوايا مدورة للزر */
+    overflow: hidden; /* إخفاء أي محتوى يتجاوز حدود الزر */
+    font-size: 16px; /* حجم خط النص في الزر */
+    transition: background-color 0.3s; /* تأثير الانتقال عند تغيير اللون */
+}
+
+/* تنسيق زر "Read More" */
+.read-more {
+    position: relative; /* تعيين موضع العنصر لتطبيق التأثيرات بشكل صحيح */
+    display: inline-block; /* جعل الزر يظهر بجانب النصوص الأخرى */
+    padding: 10px 20px; /* إضافة مسافة داخلية حول النص في الزر */
+    background-color: green; /* لون خلفية الزر */
+    color: white; /* لون النص داخل الزر */
+    text-decoration: none; /* إزالة التسطير من النص داخل الزر */
+    border-radius: 5px; /* تعيين زوايا مدورة للزر */
+    overflow: hidden; /* إخفاء أي محتوى يتجاوز حدود الزر */
+    font-size: 16px; /* حجم خط النص في الزر */
+    transition: background-color 0.3s; /* تأثير الانتقال عند تغيير اللون */
+}
+
+.read-more::before {
+    content: ''; /* إضافة محتوى فارغ لإنشاء تأثير النجوم */
+    position: absolute; /* تعيين موضع العنصر كـ absolute لتحديد موقعه بالنسبة للزر */
+    top: 100%; /* وضع النجوم في المنتصف العمودي للزر */
+    left:100%; /* وضع النجوم في المنتصف الأفقي للزر */
+    width: 300%; /* تعيين عرض العنصر لتغطية الزر بالكامل */
+    height: 300%; /* تعيين ارتفاع العنصر لتغطية الزر بالكامل */
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 20%, transparent 30%); /* تأثير النجوم */
+    background-size: 100px 100px; /* تعيين حجم نمط الخلفية */
+    transform: translate(-50%, -50%); /* محاذاة العنصر في المركز */
+    opacity: 0; /* جعل العنصر غير مرئي بشكل افتراضي */
+    transition: opacity 1.3s; /* تأثير الانتقال عند تغيير الشفافية */
+}
+
+.read-more:hover::before {
+    opacity: 1; /* جعل النجوم مرئية عند التمرير فوق الزر */
+}
+
+.read-more:hover {
+    background-color: darkgreen; /* تغيير لون الخلفية عند التمرير فوق الزر */
+}
+
+
+/* تصميم للشاشة الصغيرة */
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .text {
+        margin-bottom: 20px;
+    }
+
+    .big-cup {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .small-cups {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .small-cups img {
+        width: 40%;
+        margin: 5px;
+    }
+}
+@media (max-width: 600px) {
+    .big-cup {
+        max-width: 90%; /* اجعل عرض الصورة أكبر للأجهزة الصغيرة */
+    }
+
+    .semi-circle {
+        width: 100%; /* اجعل عرض الدائرة نصفية 100% */
+    }
+
+    .small-cups img {
+        width: 60px; /* تقليل عرض الأكواب الصغيرة */
+    }
+}
+
+
+@media (max-width: 600px) {
+    .big-cup {
+        width: 100%; /* عرض الصورة الكبيرة بنسبة 100% على الشاشات الصغيرة */
+    }
+
+    .small-cups img {
+        width: 100%; /* عرض الصور الصغيرة بنسبة 100% على الشاشات الصغيرة */
+    }
+}
